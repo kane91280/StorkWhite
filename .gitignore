@@ -40,3 +40,6 @@ Thumbs.db
 #RSA keys
 storkwhite_anhkhoa_keys
 storkwhite_anhkhoa_keys.pub
+
+#ng serve output file
+nohup.out
