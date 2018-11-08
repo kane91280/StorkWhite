@@ -188,3 +188,45 @@ h1, h2, h3, h4, h5, h6, strong {
     width: 100%;
 }
 
+.cvitae-about-me .links {
+    display: table-cell;
+    font-size: 0;
+    width: 81px;
+}
+
+cvitae-about-me .links a:first-child {
+    box-shadow: 1px 0 0 0 #f2f2f2, 0 1px 0 0 #f2f2f2;
+}
+
+.cvitae-about-me .links a {
+    /*box-shadow: 1px 0 0 0 #f2f2f2, 0 1px 0 0 #f2f2f2, 0 1px 0 0 #f2f2f2 inset;*/
+    display: block;
+    height: 81px;
+    position: relative;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #707070;
+}
+
+.cvitae-about-me .links a span {
+    font-size: 20px;
+    line-height: 80px;
+    /*-webkit-transition: color .3s;
+    -moz-transition: color .3s;*/
+    transition: color .3s;
+}
+
+[class^="ti-"], [class*=" ti-"] {
+    font-family: 'themify';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    /*line-height: 1;*/
+    -webkit-font-smoothing: antialiased;
+    /*-moz-osx-font-smoothing: grayscale;*/
+}
