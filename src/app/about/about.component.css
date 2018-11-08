@@ -1,0 +1,50 @@
+.cvitae-container {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 1200px) {
+    .cvitae-container {
+        width: 1200px;
+    }
+}
+
+/*.cvitae-section-title {
+    color: #616477;
+    letter-spacing: 2px;
+    padding-bottom: 70px;
+    position : relative;
+    text-transform : uppercase;
+}*/
+
+h3 {
+    display: block;
+    /*font-size: 1.17em;*/
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+/*.cvitae-about-me .info span {
+    display: table-cell;
+    position: relative;
+}
+
+p {
+    color: #616477;
+    line-height: 1.5;
+}
+
+@media(max-width: 767px) { 
+    .field-title {
+        width: auto;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 20px;    
+    }
+}*/
+
+
