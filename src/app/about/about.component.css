@@ -28,7 +28,7 @@ h3 {
     margin-inline-end: 0px;
 }
 
-/*.cvitae-about-me .info span {
+.cvitae-about-me .info span {
     display: table-cell;
     position: relative;
 }
@@ -45,6 +45,9 @@ p {
         font-weight: 700;
         margin-bottom: 20px;    
     }
-}*/
+}
 
+.ti-download:before {
+    content: "\e6a7";
+}
 

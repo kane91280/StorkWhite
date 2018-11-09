@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~materialize-css/dist/css/materialize.css";
+/*@import "assets/css/themify-icons.css";*/
 
 .intro-2 .cvitae-about-me .links a:hover span, .intro-2 .cvitae-achievement .achievement-container .owl-controls .owl-nav .owl-next:hover:before, .intro-2 .cvitae-achievement .achievement-container .owl-controls .owl-nav .owl-prev:hover:before, .intro-2 .cvitae-clients .clients-container .owl-controls .owl-nav .owl-next:hover:before, .intro-2 .cvitae-clients .clients-container .owl-controls .owl-nav .owl-prev:hover:before, .intro-2 .cvitae-education .content-right .collapsible .collapsible-header:before, .intro-2 .cvitae-education .content-right .collapsible .collapsible-header:hover, .intro-2 .cvitae-experience .content-right .collapsible .collapsible-header:before, .intro-2 .cvitae-experience .content-right .collapsible .collapsible-header:hover, .intro-2 .cvitae-portfolio-popup .portfolio-content .project-popup-close, .intro-2 .cvitae-portfolio-popup .portfolio-content .project-title a, .intro-2 .cvitae-section-title, .intro-2 .cvitae-skills .hi-lights li:before, .intro-2 .cvitae-skills .progress-bar-container .progress .progress-bar .text, .intro-2 .cvitae-testimonial .testimonial-container .owl-controls .owl-nav .owl-next:hover:before, .intro-2 .cvitae-testimonial .testimonial-container .owl-controls .owl-nav .owl-prev:hover:before, .intro-2 .footer-content .links li a:hover, .intro-2 .site-content .nav-links .nav-next:after, .intro-2 .site-content .nav-links .nav-previous:before, .intro-2 .site-content nav .nav-links a {
     color: #373c55;
@@ -229,4 +230,8 @@ a {
     /*line-height: 1;*/
     -webkit-font-smoothing: antialiased;
     /*-moz-osx-font-smoothing: grayscale;*/
+}
+
+.ti-download:before {
+    content: "\e6a7";
 }
