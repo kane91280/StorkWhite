@@ -232,6 +232,6 @@ a {
     /*-moz-osx-font-smoothing: grayscale;*/
 }
 
-.ti-download:before {
+/*.ti-download:before {
     content: "\e6a7";
-}
+}*/
