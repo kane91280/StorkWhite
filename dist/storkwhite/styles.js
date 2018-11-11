@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "body {\n    padding: 20px 5% 0 5%;\n}\n\n@media only screen and (max-width: 767px) {\n    #about-image, #about-details {\n        width : 100%;\n    }\n}"
+module.exports = "body {\n    padding: 20px 5% 0 5%;\n}\n\n@media only screen and (max-width: 767px) {\n    #about-image, #about-details {\n        width : 100%;\n    }\n    #about-image {\n        height: 430px;\n    }\n}"
 
 /***/ }),
 
