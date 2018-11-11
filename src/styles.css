@@ -6,4 +6,7 @@ body {
     #about-image, #about-details {
         width : 100%;
     }
+    #about-image {
+        height: 430px;
+    }
 }
