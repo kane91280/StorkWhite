@@ -41,7 +41,7 @@ module.exports = ".cvitae-container {\r\n    padding-right: 20px;\r\n    padding
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<div id = \"about\" class=\"cvitae-section cvitae-about-me \">\n  <div class=\"cvitae-container\">    \n    <!--h3 class=\"cvitae-section-title\">About me</h3-->\n\n    <div class=\"cvitae-section-content\">\n      <div class=\"content-left short-bio\">\n        <div class=\"pic\">\n          <img class=\"img-responsive\" src=\"assets/img/profile_image.jpg\" alt=\"Bio Pic\">\n        </div>\n        <p>\n          Advanced web developer with 12 years of experience in structuring, \n          developing &amp; implementing interactive website with the best \n          use of technology &amp; SEO to drive traffic.\n        </p>\n      </div>\n\n      <div class=\"content-right about\">\n        <h3 class=\"cvitae-section-title\">\n          About Me\n        </h3>\n        <p class=\"info\">\n          <span class=\"field-title\">Full Name</span> \n          <span class=\"field-separator\">:</span> \n          <span id=\"full-name\" class=\"field-value\" [innerHTML]=\"fullName\"></span>\n        </p>\n\n        <p class=\"info\">\n          <span class=\"field-title\">Address</span> \n          <span class=\"field-separator\">:</span> \n          <span id = \"address\" class=\"field-value\" [innerHTML] = \"address\" ></span>\n        </p>\n\n        <p class=\"info\">\n            <span class=\"field-title\">Address</span> \n            <span class=\"field-separator\">:</span> \n            <span id = \"country\" class=\"field-value\" [innerHTML] = \"country\" ></span>\n        </p>\n      </div><!--end of content-right about-->\n      <div class=\"links\">\n        <a \n          download=\"dummy-resume.txt\" \n          onclick=\"Materialize.toast('Resume Download Successfully', 4000, 'rounded')\" \n          href=\"dummy-resume.txt\" class=\"tooltipped\" data-position=\"left\" \n          data-delay=\"50\" data-tooltip=\"Download this Resume\" \n          data-tooltip-id=\"a2270d6e-7242-a8e3-653b-74d68f171123\">\n          <span class=\"ti-download\"></span>Download Resume\n        </a>       \n\n      </div>\n    </div><!--end of cvitae-section-content-->\n  </div><!--end of cvitae-container-->\n</div><!--end of id=\"about\" cvitae-section-->"
+module.exports = "<div class=\"row\" id=\"about-container\">\n  <div class=\"col s12\">    \n      <div class=\"row z-depth-1\" id=\"about-wrapper\">\n        <div class=\"col s5\" id=\"about-image\">\n          <div class=\"card large z-depth-0\">\n            <div class=\"card-image\">\n              <img src=\"../../assets/img/profile_image.jpg\" alt=\"\">\n              <span class=\"card-title\">Anh Khoa</span>\n            </div><!--end of card-image-->\n            <div class=\"card-content\">\n              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. \n                In, voluptatum soluta aspernatur quod quaerat saepe accusamus ducimus dolore commodi, rem.\n              </p>\n            </div>\n          </div><!--end of card large-->\n        </div><!--end of about-image-->\n        <div class=\"col s6\" id=\"about-details\">\n          <div class=\"row\">\n            <ul class=\"collection\">\n              <li class=\"collection-item avatar\">\n                <i class=\"material-icons small\">account_circle</i>\n                <span class=\"title\" style=\"padding: 0; margin: -10px 0 0 5px;\">\n                  Full name\n                </span>   \n                <p>\n                  {{fullName}}\n                </p>          \n                <a href=\"#!\" class=\"secondary-content\"><i class=\"material-icons\">grade</i></a>\n              </li>\n              <li class=\"collection-item avatar\">\n                  <i class=\"material-icons small\">location_on</i>\n                  <span class=\"title\">\n                    Address\n                  </span>   \n                  <p>\n                    {{address}}\n                  </p>          \n                  <a href=\"#!\" class=\"secondary-content\"><i class=\"material-icons\">grade</i></a>\n                </li>\n                <li class=\"collection-item avatar\">\n                  <i class=\"material-icons small\">markunread_mailbox</i>\n                  <span class=\"title\">\n                    Zip\n                  </span>   \n                  <p>\n                    {{zipCode}}\n                  </p>          \n                  <a href=\"#!\" class=\"secondary-content\"><i class=\"material-icons\">grade</i></a>\n                </li>\n                <li class=\"collection-item avatar\">\n                    <i class=\"material-icons small\">location_city</i>\n                    <span class=\"title\">\n                      Country\n                    </span>   \n                    <p>\n                      {{country}}\n                    </p>          \n                    <a href=\"#!\" class=\"secondary-content\"><i class=\"material-icons\">grade</i></a>\n                  </li>\n                <li class=\"collection-item avatar\">\n                  <i class=\"material-icons small\">phone_iphone</i>\n                  <span class=\"title\">\n                    Phone\n                  </span>   \n                  <p>\n                    {{address}}\n                  </p>          \n                  <a href=\"#!\" class=\"secondary-content\"><i class=\"material-icons\">grade</i></a>\n                </li>\n                <li class=\"collection-item avatar\">\n                    <i class=\"material-icons small\">email</i>\n                    <span class=\"title\">\n                      Email\n                    </span>   \n                    <p>\n                      {{email}}\n                    </p>          \n                    <a href=\"#!\" class=\"secondary-content\"><i class=\"material-icons\">grade</i></a>\n                  </li>\n            </ul>            \n          </div>\n        </div><!--end of about-details-->\n      </div><!--end of about-wrapper-->    \n  </div>\n</div><!--end of about-container-->"
 
 /***/ }),
 
@@ -74,6 +74,8 @@ var AboutComponent = /** @class */ (function () {
         this._address = personalInfoService.getAddress();
         this._zipCode = personalInfoService.getZipCode();
         this._country = personalInfoService.getCountry();
+        this._phone = personalInfoService.getPhone();
+        this._email = personalInfoService.getEmail();
     }
     Object.defineProperty(AboutComponent.prototype, "fullName", {
         get: function () { return this._fullName; },
@@ -92,6 +94,16 @@ var AboutComponent = /** @class */ (function () {
     });
     Object.defineProperty(AboutComponent.prototype, "country", {
         get: function () { return this._country; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AboutComponent.prototype, "phone", {
+        get: function () { return this._phone; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AboutComponent.prototype, "email", {
+        get: function () { return this._email; },
         enumerable: true,
         configurable: true
     });
@@ -245,6 +257,8 @@ var PersonalInfoService = /** @class */ (function () {
     PersonalInfoService.prototype.getAddress = function () { return "23, alley 612/1, Lac Long Quan, Tay Ho, Hanoi"; };
     PersonalInfoService.prototype.getZipCode = function () { return "24000"; };
     PersonalInfoService.prototype.getCountry = function () { return "Vietnam"; };
+    PersonalInfoService.prototype.getPhone = function () { return "+(84)-08686-99599"; };
+    PersonalInfoService.prototype.getEmail = function () { return "anhkhoa91280@gmail.com"; };
     PersonalInfoService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
             providedIn: 'root'
