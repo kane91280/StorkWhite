@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "body {\n    padding: 20px 5% 0 5%;\n}\n\n#about-social ul li {\n    padding: 0; \n    text-align:center; \n    padding-top:30px;     \n}\n\n#about-social ul li a span {\n    font-size: 20px;\n}\n\n@media only screen and (max-width: 767px) {\n    #about-image, #about-details {\n        width : 100%;\n    }\n    #about-image {\n        display: inline-block;\n    }\n}"
+module.exports = "body {\n    padding: 20px 5% 0 5%;\n}\n\n#about-social ul li {\n    padding: 0; \n    text-align:center; \n    padding-top:30px;     \n}\n\n#about-social ul li a span {\n    font-size: 20px;\n}\n\n@media only screen and (max-width: 767px) {\n    /*#about-image, #about-details, #about-social {\n        width : 100%;\n    }*/\n    /*#about-social ul {\n        display: block;\n    }\n    #about-social ul li {\n        display: table-cell;\n        width: 50px;\n        border-right: 1px solid grey;\n    }*/\n    #about-image {\n        display: inline-block;\n    }\n\n}"
 
 /***/ }),
 
