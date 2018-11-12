@@ -2,11 +2,21 @@ body {
     padding: 20px 5% 0 5%;
 }
 
+#about-social ul li {
+    padding: 0; 
+    text-align:center; 
+    padding-top:30px;     
+}
+
+#about-social ul li a span {
+    font-size: 20px;
+}
+
 @media only screen and (max-width: 767px) {
     #about-image, #about-details {
         width : 100%;
     }
     #about-image {
-        height: auto;
+        display: inline-block;
     }
 }
