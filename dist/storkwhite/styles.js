@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "body {\n    padding: 20px 5% 0 5%;\n}\n\n#about-social ul li {\n    padding: 0; \n    text-align:center; \n    padding-top:30px;     \n}\n\n#about-social ul li a span {\n    font-size: 20px;\n}\n\n@media only screen and (max-width: 767px) {\n    #about-social ul {\n        margin-bottom: 0;\n    }\n\n    #about-social ul li {\n        padding-bottom: 0;\n        margin-bottom: 0;\n        border-bottom: 0;\n        border-right: 1px solid #e0e0e0  ;\n    }\n    #about-image {\n        display: inline-block;\n    }\n\n}"
+module.exports = "body {\n    padding: 20px 5% 0 5%;\n}\n\n#about-social ul li {\n    padding: 0; \n    text-align:center; \n    padding-top:30px;     \n}\n\n#about-social ul li a span {\n    font-size: 20px;\n}\n\n@media only screen and (max-width: 767px) {\n    #about-image {\n        height: 350px;\n    }\n\n    #about-social ul {\n        margin-bottom: 0;\n    }\n\n    #about-social ul li {\n        padding-bottom: 0;\n        margin-bottom: 0;\n        border-bottom: 0;\n        border-right: 1px solid #e0e0e0  ;\n    }\n    #about-image {\n        display: inline-block;\n    }\n\n}"
 
 /***/ }),
 
