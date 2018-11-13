@@ -20,6 +20,7 @@ body {
     #about-social ul li {
         padding-bottom: 0;
         margin-bottom: 0;
+        border-bottom: 0;
         border-right: 1px solid #e0e0e0  ;
     }
     #about-image {
