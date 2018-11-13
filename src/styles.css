@@ -13,17 +13,15 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
-    /*#about-image, #about-details, #about-social {
-        width : 100%;
-    }*/
-    /*#about-social ul {
-        display: block;
+    #about-social ul {
+        margin-bottom: 0;
     }
+
     #about-social ul li {
-        display: table-cell;
-        width: 50px;
-        border-right: 1px solid grey;
-    }*/
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border-right: 1px solid #e0e0e0  ;
+    }
     #about-image {
         display: inline-block;
     }
