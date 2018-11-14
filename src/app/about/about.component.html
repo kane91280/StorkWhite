@@ -1,7 +1,7 @@
-<div class="row" id="about-container">
+<div class="row content-section" id="about-container">
   <div class="col s12">    
       <div class="row z-depth-1" id="about-wrapper">
-        <div class="col s12 m6" id="about-image">
+        <div class="col s12 m4" id="about-image">
           <div class="card large z-depth-0">
             <div class="card-image">
               <img src="../../assets/img/profile_image.jpg" alt="">
@@ -14,9 +14,13 @@
             </div>
           </div><!--end of card large-->
         </div><!--end of about-image-->
-        <div class="col s12 m5" id="about-details">
-          <div class="row">
-            <ul class="collection">
+        <div class="col s12 m7" id="about-details">
+          <h3 class="section-title">
+            About me
+          </h3>
+          <div class="row" 
+            style="margin-bottom: 0; padding-bottom:0;">            
+            <ul class="collection col s12 m11">
               <li class="collection-item avatar">
                 <i class="material-icons small grey-text">account_circle</i>
                 <span class="title" style="padding: 0; margin: -10px 0 0 5px;">
@@ -33,37 +37,17 @@
                     Address
                   </span>   
                   <p>
-                    {{address}}
+                    {{address + ", " + country + ". zip: " + zipCode}}
                   </p>          
                   <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                </li>
-                <li class="collection-item avatar">
-                  <i class="material-icons small grey-text">markunread_mailbox</i>
-                  <span class="title">
-                    Zip
-                  </span>   
-                  <p>
-                    {{zipCode}}
-                  </p>          
-                  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                </li>
-                <li class="collection-item avatar">
-                    <i class="material-icons small grey-text">location_city</i>
-                    <span class="title">
-                      Country
-                    </span>   
-                    <p>
-                      {{country}}
-                    </p>          
-                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-                  </li>
+                </li>                               
                 <li class="collection-item avatar">
                   <i class="material-icons small grey-text">phone_iphone</i>
                   <span class="title">
                     Phone
                   </span>   
                   <p>
-                    {{address}}
+                    {{phone}}
                   </p>          
                   <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
                 </li>
@@ -82,7 +66,7 @@
         </div><!--end of about-details-->
         <div class="col s12 m1" id="about-social"> 
           <div class=" row" style="margin-bottom: 0px;">                          
-            <ul class="collection">
+            <ul class="collection" style="margin-top: 0;">
             
               <li class="col s2 m12 collection-item avatar tooltipped" onclick="Materialize.toast('Successfully downloaed resume', 4000, 'rounded')"
                 data-position="left" data-tooltip="Download resume"
@@ -96,26 +80,26 @@
                     <span class="ti-github grey-text"></span>                                              
                   </a>                        
               </li>   
-              <li class="col s2 m12 collection-item avatar tooltipped" data-position="left" data-tooltip="Fork me on github">      
+              <li class="col s2 m12 collection-item avatar tooltipped" data-position="left" data-tooltip="Follow on linkedin">      
                   <a href="#">                  
-                    <span class="ti-github grey-text"></span>                                              
+                    <span class="ti-linkedin grey-text"></span>                                              
                   </a>                        
               </li>   
-              <li class="col s2 m12 collection-item avatar tooltipped" data-position="left" data-tooltip="Fork me on github">      
+              <li class="col s2 m12 collection-item avatar tooltipped" data-position="left" data-tooltip="Follow on twitter">      
                   <a href="#">                  
-                    <span class="ti-github grey-text"></span>                                              
+                    <span class="ti-twitter grey-text"></span>                                              
                   </a>                        
               </li>   
-              <li class="col s2 m12 collection-item avatar tooltipped" data-position="left" data-tooltip="Fork me on github">      
+              <li class="col s2 m12 collection-item avatar tooltipped" data-position="left" data-tooltip="Follow on facebook">      
                   <a href="#">                  
-                    <span class="ti-github grey-text"></span>                                              
+                    <span class="ti-facebook grey-text"></span>                                              
                   </a>                        
               </li>   
-              <li class="col s2 m12 collection-item avatar tooltipped" data-position="left" data-tooltip="Fork me on github"
+              <li class="col s2 m12 collection-item avatar tooltipped" data-position="left" data-tooltip="Connect with me on skype"
                 style="border:none;"
               >      
                   <a href="#">                  
-                    <span class="ti-github grey-text"></span>                                              
+                    <span class="ti-skype grey-text"></span>                                              
                   </a>                        
               </li>          
             

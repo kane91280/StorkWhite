@@ -41,7 +41,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\" id=\"about-container\">\n  <div class=\"col s12\">    \n      <div class=\"row z-depth-1\" id=\"about-wrapper\">\n        <div class=\"col s12 m6\" id=\"about-image\">\n          <div class=\"card large z-depth-0\">\n            <div class=\"card-image\">\n              <img src=\"../../assets/img/profile_image.jpg\" alt=\"\">\n              <span class=\"card-title\">Anh Khoa</span>\n            </div><!--end of card-image-->\n            <div class=\"card-content\">\n              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. \n                In, voluptatum soluta aspernatur quod quaerat saepe accusamus ducimus dolore commodi, rem.\n              </p>\n            </div>\n          </div><!--end of card large-->\n        </div><!--end of about-image-->\n        <div class=\"col s12 m5\" id=\"about-details\">\n          <div class=\"row\">\n            <ul class=\"collection\">\n              <li class=\"collection-item avatar\">\n                <i class=\"material-icons small grey-text\">account_circle</i>\n                <span class=\"title\" style=\"padding: 0; margin: -10px 0 0 5px;\">\n                  Full name\n                </span>   \n                <p>\n                  {{fullName}}\n                </p>          \n                <a href=\"#!\" class=\"secondary-content\"><i class=\"material-icons\">grade</i></a>\n              </li>\n              <li class=\"collection-item avatar\">\n                  <i class=\"material-icons small grey-text\">location_on</i>\n                  <span class=\"title\">\n                    Address\n                  </span>   \n                  <p>\n                    {{address}}\n                  </p>          \n                  <a href=\"#!\" class=\"secondary-content\"><i class=\"material-icons\">grade</i></a>\n                </li>\n                <li class=\"collection-item avatar\">\n                  <i class=\"material-icons small grey-text\">markunread_mailbox</i>\n                  <span class=\"title\">\n                    Zip\n                  </span>   \n                  <p>\n                    {{zipCode}}\n                  </p>          \n                  <a href=\"#!\" class=\"secondary-content\"><i class=\"material-icons\">grade</i></a>\n                </li>\n                <li class=\"collection-item avatar\">\n                    <i class=\"material-icons small grey-text\">location_city</i>\n                    <span class=\"title\">\n                      Country\n                    </span>   \n                    <p>\n                      {{country}}\n                    </p>          \n                    <a href=\"#!\" class=\"secondary-content\"><i class=\"material-icons\">grade</i></a>\n                  </li>\n                <li class=\"collection-item avatar\">\n                  <i class=\"material-icons small grey-text\">phone_iphone</i>\n                  <span class=\"title\">\n                    Phone\n                  </span>   \n                  <p>\n                    {{address}}\n                  </p>          \n                  <a href=\"#!\" class=\"secondary-content\"><i class=\"material-icons\">grade</i></a>\n                </li>\n                <li class=\"collection-item avatar\">\n                    <i class=\"material-icons small grey-text\">email</i>\n                    <span class=\"title\">\n                      Email\n                    </span>   \n                    <p>\n                      {{email}}\n                    </p>          \n                    <a href=\"#!\" class=\"secondary-content\"><i class=\"material-icons\">grade</i></a>\n                  </li>\n            </ul>            \n          </div>\n        </div><!--end of about-details-->\n        <div class=\"col s12 m1\" id=\"about-social\"> \n          <div class=\" row\" style=\"margin-bottom: 0px;\">                          \n            <ul class=\"collection\">\n            \n              <li class=\"col s2 m12 collection-item avatar tooltipped\" onclick=\"Materialize.toast('Successfully downloaed resume', 4000, 'rounded')\"\n                data-position=\"left\" data-tooltip=\"Download resume\"\n              >      \n                <a href=\"/dummy_resume.txt\">\n                  <span class=\"ti-download grey-text\"></span>                                                                                        \n                </a>\n              </li>        \n              <li class=\"col s2 m12 collection-item avatar tooltipped\" data-position=\"left\" data-tooltip=\"Fork me on github\">      \n                  <a href=\"#\">                  \n                    <span class=\"ti-github grey-text\"></span>                                              \n                  </a>                        \n              </li>   \n              <li class=\"col s2 m12 collection-item avatar tooltipped\" data-position=\"left\" data-tooltip=\"Fork me on github\">      \n                  <a href=\"#\">                  \n                    <span class=\"ti-github grey-text\"></span>                                              \n                  </a>                        \n              </li>   \n              <li class=\"col s2 m12 collection-item avatar tooltipped\" data-position=\"left\" data-tooltip=\"Fork me on github\">      \n                  <a href=\"#\">                  \n                    <span class=\"ti-github grey-text\"></span>                                              \n                  </a>                        \n              </li>   \n              <li class=\"col s2 m12 collection-item avatar tooltipped\" data-position=\"left\" data-tooltip=\"Fork me on github\">      \n                  <a href=\"#\">                  \n                    <span class=\"ti-github grey-text\"></span>                                              \n                  </a>                        \n              </li>   \n              <li class=\"col s2 m12 collection-item avatar tooltipped\" data-position=\"left\" data-tooltip=\"Fork me on github\"\n                style=\"border:none;\"\n              >      \n                  <a href=\"#\">                  \n                    <span class=\"ti-github grey-text\"></span>                                              \n                  </a>                        \n              </li>          \n            \n            </ul>              \n          </div>  \n        </div><!--end of about-social-->\n      </div><!--end of about-wrapper-->    \n  </div>\n</div><!--end of about-container-->"
+module.exports = "<div class=\"row content-section\" id=\"about-container\">\n  <div class=\"col s12\">    \n      <div class=\"row z-depth-1\" id=\"about-wrapper\">\n        <div class=\"col s12 m4\" id=\"about-image\">\n          <div class=\"card large z-depth-0\">\n            <div class=\"card-image\">\n              <img src=\"../../assets/img/profile_image.jpg\" alt=\"\">\n              <span class=\"card-title\">Anh Khoa</span>\n            </div><!--end of card-image-->\n            <div class=\"card-content\">\n              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. \n                In, voluptatum soluta aspernatur quod quaerat saepe accusamus ducimus dolore commodi, rem.\n              </p>\n            </div>\n          </div><!--end of card large-->\n        </div><!--end of about-image-->\n        <div class=\"col s12 m7\" id=\"about-details\">\n          <h3 class=\"section-title\">\n            About me\n          </h3>\n          <div class=\"row\" \n            style=\"margin-bottom: 0; padding-bottom:0;\">            \n            <ul class=\"collection col s12 m11\">\n              <li class=\"collection-item avatar\">\n                <i class=\"material-icons small grey-text\">account_circle</i>\n                <span class=\"title\" style=\"padding: 0; margin: -10px 0 0 5px;\">\n                  Full name\n                </span>   \n                <p>\n                  {{fullName}}\n                </p>          \n                <a href=\"#!\" class=\"secondary-content\"><i class=\"material-icons\">grade</i></a>\n              </li>\n              <li class=\"collection-item avatar\">\n                  <i class=\"material-icons small grey-text\">location_on</i>\n                  <span class=\"title\">\n                    Address\n                  </span>   \n                  <p>\n                    {{address + \", \" + country + \". zip: \" + zipCode}}\n                  </p>          \n                  <a href=\"#!\" class=\"secondary-content\"><i class=\"material-icons\">grade</i></a>\n                </li>                               \n                <li class=\"collection-item avatar\">\n                  <i class=\"material-icons small grey-text\">phone_iphone</i>\n                  <span class=\"title\">\n                    Phone\n                  </span>   \n                  <p>\n                    {{phone}}\n                  </p>          \n                  <a href=\"#!\" class=\"secondary-content\"><i class=\"material-icons\">grade</i></a>\n                </li>\n                <li class=\"collection-item avatar\">\n                    <i class=\"material-icons small grey-text\">email</i>\n                    <span class=\"title\">\n                      Email\n                    </span>   \n                    <p>\n                      {{email}}\n                    </p>          \n                    <a href=\"#!\" class=\"secondary-content\"><i class=\"material-icons\">grade</i></a>\n                  </li>\n            </ul>            \n          </div>\n        </div><!--end of about-details-->\n        <div class=\"col s12 m1\" id=\"about-social\"> \n          <div class=\" row\" style=\"margin-bottom: 0px;\">                          \n            <ul class=\"collection\" style=\"margin-top: 0;\">\n            \n              <li class=\"col s2 m12 collection-item avatar tooltipped\" onclick=\"Materialize.toast('Successfully downloaed resume', 4000, 'rounded')\"\n                data-position=\"left\" data-tooltip=\"Download resume\"\n              >      \n                <a href=\"/dummy_resume.txt\">\n                  <span class=\"ti-download grey-text\"></span>                                                                                        \n                </a>\n              </li>        \n              <li class=\"col s2 m12 collection-item avatar tooltipped\" data-position=\"left\" data-tooltip=\"Fork me on github\">      \n                  <a href=\"#\">                  \n                    <span class=\"ti-github grey-text\"></span>                                              \n                  </a>                        \n              </li>   \n              <li class=\"col s2 m12 collection-item avatar tooltipped\" data-position=\"left\" data-tooltip=\"Follow on linkedin\">      \n                  <a href=\"#\">                  \n                    <span class=\"ti-linkedin grey-text\"></span>                                              \n                  </a>                        \n              </li>   \n              <li class=\"col s2 m12 collection-item avatar tooltipped\" data-position=\"left\" data-tooltip=\"Follow on twitter\">      \n                  <a href=\"#\">                  \n                    <span class=\"ti-twitter grey-text\"></span>                                              \n                  </a>                        \n              </li>   \n              <li class=\"col s2 m12 collection-item avatar tooltipped\" data-position=\"left\" data-tooltip=\"Follow on facebook\">      \n                  <a href=\"#\">                  \n                    <span class=\"ti-facebook grey-text\"></span>                                              \n                  </a>                        \n              </li>   \n              <li class=\"col s2 m12 collection-item avatar tooltipped\" data-position=\"left\" data-tooltip=\"Connect with me on skype\"\n                style=\"border:none;\"\n              >      \n                  <a href=\"#\">                  \n                    <span class=\"ti-skype grey-text\"></span>                                              \n                  </a>                        \n              </li>          \n            \n            </ul>              \n          </div>  \n        </div><!--end of about-social-->\n      </div><!--end of about-wrapper-->    \n  </div>\n</div><!--end of about-container-->"
 
 /***/ }),
 
@@ -142,7 +142,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"cvitae-site-container\">\n  <app-about></app-about>\n</div>  \n\n\n"
+module.exports = "<div class=\"cvitae-site-container\">\n  <div class=\"content-wrapper\">\n    <app-about></app-about>\n  </div>\n</div>  \n\n\n"
 
 /***/ }),
 
@@ -196,12 +196,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _about_about_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./about/about.component */ "./src/app/about/about.component.ts");
+/* harmony import */ var _skills_skills_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./skills/skills.component */ "./src/app/skills/skills.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -213,7 +215,8 @@ var AppModule = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
                 _app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"],
-                _about_about_component__WEBPACK_IMPORTED_MODULE_3__["AboutComponent"]
+                _about_about_component__WEBPACK_IMPORTED_MODULE_3__["AboutComponent"],
+                _skills_skills_component__WEBPACK_IMPORTED_MODULE_4__["SkillsComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"]
@@ -266,6 +269,69 @@ var PersonalInfoService = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], PersonalInfoService);
     return PersonalInfoService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/skills/skills.component.css":
+/*!*********************************************!*\
+  !*** ./src/app/skills/skills.component.css ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/skills/skills.component.html":
+/*!**********************************************!*\
+  !*** ./src/app/skills/skills.component.html ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  skills works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/skills/skills.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/skills/skills.component.ts ***!
+  \********************************************/
+/*! exports provided: SkillsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SkillsComponent", function() { return SkillsComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var SkillsComponent = /** @class */ (function () {
+    function SkillsComponent() {
+    }
+    SkillsComponent.prototype.ngOnInit = function () {
+    };
+    SkillsComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-skills',
+            template: __webpack_require__(/*! ./skills.component.html */ "./src/app/skills/skills.component.html"),
+            styles: [__webpack_require__(/*! ./skills.component.css */ "./src/app/skills/skills.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], SkillsComponent);
+    return SkillsComponent;
 }());
 
 
