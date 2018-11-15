@@ -72,17 +72,13 @@ html {
     .content-wrapper {
         padding: 20px 5% 0 5%;
     }
-    #about-image {
-        margin : 0;  
-        padding: 0;      
-        /*height: 480px;*/        
+    #about-image {        
+        height: auto;
         border-bottom: 1px solid #e0e0e0;       
     }
-
-    #about-image .card.large {
-        margin-bottom: 0;
-    }
-
+    #about-image .card.large {        
+        margin-bottom: 0;        
+    }    
     #about-social ul {
         margin-bottom: 0;
     }
