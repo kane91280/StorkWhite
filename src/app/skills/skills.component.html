@@ -1,3 +1,49 @@
-<p>
-  skills works!
-</p>
+<script>
+  $('document').ready(function() {
+    $('.css').animate({width:'70%'}, 2000);
+  }); 
+</script>
+
+<div class="row content-section" id="skills-section">
+  <div class="col s12 section-wrapper">
+    <div class="row z-depth-1" id="skills-wrapper">
+      <div class="col m4 s12 section-left-col" id="skills-list">
+        <h3 class="section-title">Skills</h3>
+        <div class="row">
+          <ul class="collection col m11 s11" style="/*float: right;*/">
+            <li class="collection-item">
+              Web front &#38; back-end application development
+            </li>
+            <li class="collection-item">
+              Desktop Qt C++ development
+            </li>            
+            <li class="collection-item">
+              Relational databases, NoSQL databases
+            </li>
+            <li class="collection-item">
+              DevOps: AWS EC2, Linux OS, Apache2, IIS
+            </li>
+            <li class="collection-item">
+              Version controls: Git
+            </li>
+          </ul>
+        </div>
+      </div><!--end of skills-list-->
+      <div class="col m8 s12" id="skills-rate">      
+          <div class="progress-bar-container">
+            <div class="row">
+              <div class="col m2 s12">
+                <h3 class="progress-title">WordPress</h3>
+              </div>
+              <div class="col m9 s12">
+                <div class="progress-bar">              
+                  <div class="progress">
+                  </div>
+                </div><!--end of progress bar-->
+              </div>
+            </div>
+          </div><!--end of progress-bar-container-->
+      </div><!--end of skills-rate-->  
+    </div><!--end of skill-wrapper-->
+  </div><!--end of section wrapper-->
+</div><!--end of content-section-->

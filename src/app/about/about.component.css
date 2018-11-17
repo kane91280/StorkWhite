@@ -1,3 +1,26 @@
-#about-image .card.large {
-    height : auto;
+@media only screen and (max-width: 767px) {
+    #about-image .card.large {
+        height : auto;
+    }
+    #about-image {        
+        height: auto;
+        border-bottom: 1px solid #e0e0e0;       
+    }
+    #about-image .card.large {        
+        margin-bottom: 0;        
+    }    
+    #about-social ul {
+        margin-bottom: 0;
+        border-top: 1px solid #eeeeee  ;
+    }
+
+    #about-social ul li {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border-bottom: 0;
+        border-right: 1px solid #eeeeee  ;
+    }
+    #about-image {
+        display: inline-block;
+    }
 }
