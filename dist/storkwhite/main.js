@@ -275,6 +275,53 @@ var PersonalInfoService = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/skills.service.ts":
+/*!***********************************!*\
+  !*** ./src/app/skills.service.ts ***!
+  \***********************************/
+/*! exports provided: SkillsService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SkillsService", function() { return SkillsService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var SkillsService = /** @class */ (function () {
+    function SkillsService() {
+    }
+    SkillsService.prototype.getSkillList = function () {
+        var skills = [
+            "Web front and back-end application",
+            "Desktop Qt C++ development",
+            "Relational databases, NoSQL databases",
+            "DevOps: AWS EC2, Linux OS, Apache2, IIS",
+            "Version controls: Git"
+        ];
+        return skills;
+    };
+    SkillsService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [])
+    ], SkillsService);
+    return SkillsService;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/skills/skills.component.css":
 /*!*********************************************!*\
   !*** ./src/app/skills/skills.component.css ***!
@@ -282,7 +329,7 @@ var PersonalInfoService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".collection {\r\n    float: right;\r\n}\r\n\r\n.collection .collection-item {\r\n    background-color: #fff;\r\n    line-height: 1.5rem;\r\n    padding: 10px 6px;\r\n    margin: 0;\r\n    color: #bdbdbd;\r\n    border-bottom: 1px solid #eeeeee;\r\n}\r\n\r\n.progress-title {\r\n    color: #747474;\r\n    font-size: 14px;\r\n    letter-spacing: 2px;\r\n    text-transform: uppercase;\r\n    top: 1px;\r\n}\r\n\r\n.progress-bar-wrapper-layout {\r\n    width:68%;\r\n}\r\n\r\n.progress-bar {\r\n    height: 15px; \r\n    padding-top: 0px;\r\n    background: #eeeeee; \r\n    margin-top:31px;\r\n}\r\n\r\n.progress {\r\n    height: 15px;\r\n    width: 0px;\r\n    background-color: #e0e0e0;     \r\n}\r\n\r\n@media only screen and (max-width: 767px) {        \r\n    .collection .collection-item {        \r\n       /*background-color: #fff;\r\n        line-height: 1.5rem;*/\r\n        padding: 10px 0px;\r\n        /*margin: 0;\r\n        color: #bdbdbd;\r\n        border-bottom: 1px solid #eeeeee;*/\r\n    }\r\n}"
+module.exports = ".collection {\r\n    float: right;\r\n}\r\n\r\n.collection .collection-item {\r\n    background-color: #fff;\r\n    line-height: 1.5rem;\r\n    padding: 10px 6px;\r\n    margin: 0;\r\n    color: #bdbdbd;\r\n    border-bottom: 1px solid #eeeeee;\r\n}\r\n\r\n.progress-title {\r\n    color: #747474;\r\n    font-size: 14px;\r\n    letter-spacing: 2px;\r\n    text-transform: uppercase;\r\n    top: 1px;\r\n    margin-left: 45px;\r\n}\r\n\r\n.progress-bar-wrapper-layout {\r\n    width:68% !important;\r\n    margin-left: 39px !important;\r\n}\r\n\r\n.progress-bar {\r\n    height: 15px; \r\n    padding-top: 0px;\r\n    background: #eeeeee; \r\n    margin-top:31px;\r\n    \r\n}\r\n\r\n.progress {\r\n    height: 15px;\r\n    width: 0px;\r\n    background-color: #e0e0e0;     \r\n}\r\n\r\n@media only screen and (max-width: 767px) {        \r\n    .collection .collection-item {        \r\n       /*background-color: #fff;\r\n        line-height: 1.5rem;*/\r\n        padding: 10px 0px;\r\n        /*margin: 0;\r\n        color: #bdbdbd;\r\n        border-bottom: 1px solid #eeeeee;*/\r\n    }\r\n}"
 
 /***/ }),
 
@@ -293,7 +340,7 @@ module.exports = ".collection {\r\n    float: right;\r\n}\r\n\r\n.collection .co
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<script type=\"text/javascript\" src=\"https://code.jquery.com/jquery-2.1.1.min.js\"></script>\n<script type=\"text/javascript\">\n  $(document).ready(function() {\n    alert(\"fsdfs\");\n    //console.log(\"jquery is working\");\n    //$('.progress').animate({width:'75%'}, 2000);\n  }); \n</script>\n\n<div class=\"row content-section\" id=\"skills-section\">\n  <div class=\"col s12 section-wrapper\">\n    <div class=\"row z-depth-1\" id=\"skills-wrapper\">\n      <div class=\"col m4 s12 section-left-col\" id=\"skills-list\">\n        <h3 class=\"section-title\">Skills</h3>\n        <div class=\"row\">\n          <ul class=\"collection col m11 s11\">\n            <li class=\"collection-item\">\n              Web front &#38; back-end application development\n            </li>\n            <li class=\"collection-item\">\n              Desktop Qt C++ development\n            </li>            \n            <li class=\"collection-item\">\n              Relational databases, NoSQL databases\n            </li>\n            <li class=\"collection-item\">\n              DevOps: AWS EC2, Linux OS, Apache2, IIS\n            </li>\n            <li class=\"collection-item\">\n              Version controls: Git\n            </li>\n          </ul>\n        </div>\n      </div><!--end of skills-list-->\n      <div class=\"col m8 s12\" id=\"skills-rate\">      \n          <div class=\"progress-bar-container\">\n            <div class=\"row\">\n              <div class=\"col m2 s12\">\n                <h3 class=\"progress-title\">WordPress</h3>\n              </div>\n              <div class=\"col m9 s12 progress-bar-wrapper-layout\">\n                <div class=\"progress-bar-wrapper\">              \n                  <div class=\"progress-bar\">\n                    <div class=\"progress\">\n                      \n                    </div>\n                  </div>\n                </div><!--end of progress bar-->\n              </div>\n            </div>\n          </div><!--end of progress-bar-container-->\n      </div><!--end of skills-rate-->  \n    </div><!--end of skill-wrapper-->\n  </div><!--end of section wrapper-->\n</div><!--end of content-section-->\n"
+module.exports = "<script type=\"text/javascript\" src=\"https://code.jquery.com/jquery-2.1.1.min.js\"></script>\n<script type=\"text/javascript\">\n  $(document).ready(function() {\n    alert(\"fsdfs\");\n    //console.log(\"jquery is working\");\n    //$('.progress').animate({width:'75%'}, 2000);\n  }); \n</script>\n\n<div class=\"row content-section\" id=\"skills-section\">\n  <div class=\"col s12 section-wrapper\">\n    <div class=\"row z-depth-1\" id=\"skills-wrapper\">\n      <div class=\"col m4 s12 section-left-col\" id=\"skills-list\">\n        <h3 class=\"section-title\">Skills</h3>\n        <div class=\"row\">\n          <ul class=\"collection col m11 s11\">\n            <li class=\"collection-item\" *ngFor=\"let skill of skills\">\n              {{skill}}\n            </li>            \n          </ul>\n        </div>\n      </div><!--end of skills-list-->\n      <div class=\"col m8 s12\" id=\"skills-rate\">      \n          <div class=\"progress-bar-container\">\n            <div class=\"row\">\n              <div class=\"col m2 s12\">\n                <h3 class=\"progress-title\">WordPress</h3>\n              </div>\n              <div class=\"col m9 s12 progress-bar-wrapper-layout\">\n                <div class=\"progress-bar-wrapper\">              \n                  <div class=\"progress-bar\">\n                    <div class=\"progress\">\n                      \n                    </div>\n                  </div>\n                </div><!--end of progress bar-->\n              </div>\n            </div>\n          </div><!--end of progress-bar-container-->\n      </div><!--end of skills-rate-->  \n    </div><!--end of skill-wrapper-->\n  </div><!--end of section wrapper-->\n</div><!--end of content-section-->\n"
 
 /***/ }),
 
@@ -308,6 +355,7 @@ module.exports = "<script type=\"text/javascript\" src=\"https://code.jquery.com
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SkillsComponent", function() { return SkillsComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _skills_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../skills.service */ "./src/app/skills.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -318,9 +366,16 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var SkillsComponent = /** @class */ (function () {
-    function SkillsComponent() {
+    function SkillsComponent(skillsService) {
+        this._skills = skillsService.getSkillList();
     }
+    Object.defineProperty(SkillsComponent.prototype, "skills", {
+        get: function () { return this._skills; },
+        enumerable: true,
+        configurable: true
+    });
     SkillsComponent.prototype.ngOnInit = function () {
     };
     SkillsComponent = __decorate([
@@ -329,7 +384,7 @@ var SkillsComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./skills.component.html */ "./src/app/skills/skills.component.html"),
             styles: [__webpack_require__(/*! ./skills.component.css */ "./src/app/skills/skills.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_skills_service__WEBPACK_IMPORTED_MODULE_1__["SkillsService"]])
     ], SkillsComponent);
     return SkillsComponent;
 }());

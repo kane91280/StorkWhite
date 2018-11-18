@@ -14,21 +14,9 @@
         <h3 class="section-title">Skills</h3>
         <div class="row">
           <ul class="collection col m11 s11">
-            <li class="collection-item">
-              Web front &#38; back-end application development
-            </li>
-            <li class="collection-item">
-              Desktop Qt C++ development
+            <li class="collection-item" *ngFor="let skill of skills">
+              {{skill}}
             </li>            
-            <li class="collection-item">
-              Relational databases, NoSQL databases
-            </li>
-            <li class="collection-item">
-              DevOps: AWS EC2, Linux OS, Apache2, IIS
-            </li>
-            <li class="collection-item">
-              Version controls: Git
-            </li>
           </ul>
         </div>
       </div><!--end of skills-list-->

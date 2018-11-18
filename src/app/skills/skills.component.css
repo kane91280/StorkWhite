@@ -17,10 +17,12 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     top: 1px;
+    margin-left: 45px;
 }
 
 .progress-bar-wrapper-layout {
-    width:68%;
+    width:68% !important;
+    margin-left: 39px !important;
 }
 
 .progress-bar {
@@ -28,6 +30,7 @@
     padding-top: 0px;
     background: #eeeeee; 
     margin-top:31px;
+    
 }
 
 .progress {
