@@ -309,6 +309,14 @@ var SkillsService = /** @class */ (function () {
         ];
         return skills;
     };
+    SkillsService.prototype.getSkillRatings = function () {
+        var ratings = [
+            { skill: "Angular", rate: 75 },
+            { skill: "Nodejs", rate: 80 },
+            { skill: "Laravel", rate: 50 },
+        ];
+        return ratings;
+    };
     SkillsService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
             providedIn: 'root'
@@ -329,7 +337,7 @@ var SkillsService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".collection {\r\n    float: right;\r\n}\r\n\r\n.collection .collection-item {\r\n    background-color: #fff;\r\n    line-height: 1.5rem;\r\n    padding: 10px 6px;\r\n    margin: 0;\r\n    color: #bdbdbd;\r\n    border-bottom: 1px solid #eeeeee;\r\n}\r\n\r\n.progress-title {\r\n    color: #747474;\r\n    font-size: 14px;\r\n    letter-spacing: 2px;\r\n    text-transform: uppercase;\r\n    top: 1px;\r\n    margin-left: 45px;\r\n}\r\n\r\n.progress-bar-wrapper-layout {\r\n    width:68% !important;\r\n    margin-left: 39px !important;\r\n}\r\n\r\n.progress-bar {\r\n    height: 15px; \r\n    padding-top: 0px;\r\n    background: #eeeeee; \r\n    margin-top:31px;\r\n    \r\n}\r\n\r\n.progress {\r\n    height: 15px;\r\n    width: 0px;\r\n    background-color: #e0e0e0;     \r\n}\r\n\r\n@media only screen and (max-width: 767px) {        \r\n    .collection .collection-item {        \r\n       /*background-color: #fff;\r\n        line-height: 1.5rem;*/\r\n        padding: 10px 0px;\r\n        /*margin: 0;\r\n        color: #bdbdbd;\r\n        border-bottom: 1px solid #eeeeee;*/\r\n    }\r\n}"
+module.exports = ".collection {\r\n    float: right;\r\n}\r\n\r\n.collection .collection-item {\r\n    background-color: #fff;\r\n    line-height: 1.5rem;\r\n    padding: 10px 6px;\r\n    margin: 0;\r\n    color: #bdbdbd;\r\n    border-bottom: 1px solid #eeeeee;\r\n}\r\n\r\n.progress-bar-container {\r\n    border: none !important;\r\n}\r\n\r\n.progress-title {\r\n    color: #747474;\r\n    font-size: 14px;\r\n    letter-spacing: 2px;\r\n    text-transform: uppercase;\r\n    top: 1px;\r\n    margin-left: 45px;\r\n}\r\n\r\n.progress-bar-wrapper-layout {\r\n    width:68% !important;\r\n    margin-left: 39px !important;\r\n}\r\n\r\n.progress-bar {\r\n    height: 15px; \r\n    padding-top: 0px;\r\n    background: #eeeeee; \r\n    margin-top:31px;\r\n    color: #fff;\r\n    font-size: 12px;\r\n    text-align: center;\r\n}\r\n\r\n.progress {\r\n    height: 15px;\r\n    width: 0px;\r\n    background-color: #e0e0e0;     \r\n}\r\n\r\n@media only screen and (max-width: 767px) {        \r\n    .collection .collection-item {        \r\n       /*background-color: #fff;\r\n        line-height: 1.5rem;*/\r\n        padding: 10px 0px;\r\n        /*margin: 0;\r\n        color: #bdbdbd;\r\n        border-bottom: 1px solid #eeeeee;*/\r\n    }\r\n}"
 
 /***/ }),
 
@@ -340,7 +348,7 @@ module.exports = ".collection {\r\n    float: right;\r\n}\r\n\r\n.collection .co
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<script type=\"text/javascript\" src=\"https://code.jquery.com/jquery-2.1.1.min.js\"></script>\n<script type=\"text/javascript\">\n  $(document).ready(function() {\n    alert(\"fsdfs\");\n    //console.log(\"jquery is working\");\n    //$('.progress').animate({width:'75%'}, 2000);\n  }); \n</script>\n\n<div class=\"row content-section\" id=\"skills-section\">\n  <div class=\"col s12 section-wrapper\">\n    <div class=\"row z-depth-1\" id=\"skills-wrapper\">\n      <div class=\"col m4 s12 section-left-col\" id=\"skills-list\">\n        <h3 class=\"section-title\">Skills</h3>\n        <div class=\"row\">\n          <ul class=\"collection col m11 s11\">\n            <li class=\"collection-item\" *ngFor=\"let skill of skills\">\n              {{skill}}\n            </li>            \n          </ul>\n        </div>\n      </div><!--end of skills-list-->\n      <div class=\"col m8 s12\" id=\"skills-rate\">      \n          <div class=\"progress-bar-container\">\n            <div class=\"row\">\n              <div class=\"col m2 s12\">\n                <h3 class=\"progress-title\">WordPress</h3>\n              </div>\n              <div class=\"col m9 s12 progress-bar-wrapper-layout\">\n                <div class=\"progress-bar-wrapper\">              \n                  <div class=\"progress-bar\">\n                    <div class=\"progress\">\n                      \n                    </div>\n                  </div>\n                </div><!--end of progress bar-->\n              </div>\n            </div>\n          </div><!--end of progress-bar-container-->\n      </div><!--end of skills-rate-->  \n    </div><!--end of skill-wrapper-->\n  </div><!--end of section wrapper-->\n</div><!--end of content-section-->\n"
+module.exports = "<div class=\"row content-section\" id=\"skills-section\">\n  <div class=\"col s12 section-wrapper\">\n    <div class=\"row z-depth-1\" id=\"skills-wrapper\">\n\n      <div class=\"col m4 s12 section-left-col\" id=\"skills-list\">\n        <h3 class=\"section-title\">Skills</h3>\n        <div class=\"row\">\n          <ul class=\"collection col m11 s11\">\n            <li class=\"collection-item\" *ngFor=\"let skill of skills\">\n              {{skill}}\n            </li>            \n          </ul>\n        </div>\n      </div><!--end of skills-list-->\n\n      <div class=\"col m8 s12\" id=\"skills-rate\">   \n        <div class=\"row\">\n          <ul class=\"collection col m12 s12\">\n            <li class=\"collection-item progress-bar-container\" *ngFor=\"let rating of skillRatings\">                          \n              <div class=\"row\">\n                  <div class=\"col m2 s12\">\n                    <h3 class=\"progress-title\">{{rating.skill}}</h3>\n                  </div>\n                  <div class=\"col m9 s12 progress-bar-wrapper-layout\">\n                    <div class=\"progress-bar-wrapper\">              \n                      <div class=\"progress-bar\">\n                        <div class=\"progress\" [attr.value]=\"rating.rate\" [attr.id]=\"rating.skill\">\n                          \n                        </div>\n                      </div>\n                    </div>\n                  </div>\n              </div>            \n            </li><!--end of progress-bar-container-->\n          </ul>   \n        </div>\n      </div><!--end of skills-rate-->  \n    </div><!--end of skill-wrapper-->\n  </div><!--end of section wrapper-->\n</div><!--end of content-section-->\n"
 
 /***/ }),
 
@@ -370,9 +378,15 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var SkillsComponent = /** @class */ (function () {
     function SkillsComponent(skillsService) {
         this._skills = skillsService.getSkillList();
+        this._skillRatings = skillsService.getSkillRatings();
     }
     Object.defineProperty(SkillsComponent.prototype, "skills", {
         get: function () { return this._skills; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(SkillsComponent.prototype, "skillRatings", {
+        get: function () { return this._skillRatings; },
         enumerable: true,
         configurable: true
     });

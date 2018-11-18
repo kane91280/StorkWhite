@@ -11,6 +11,10 @@
     border-bottom: 1px solid #eeeeee;
 }
 
+.progress-bar-container {
+    border: none !important;
+}
+
 .progress-title {
     color: #747474;
     font-size: 14px;
@@ -30,7 +34,9 @@
     padding-top: 0px;
     background: #eeeeee; 
     margin-top:31px;
-    
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
 }
 
 .progress {
