@@ -19,10 +19,21 @@
     top: 1px;
 }
 
-.progress {
-    height: 10px; 
+.progress-bar-wrapper-layout {
+    width:68%;
+}
+
+.progress-bar {
+    height: 15px; 
+    padding-top: 0px;
     background: #eeeeee; 
     margin-top:31px;
+}
+
+.progress {
+    height: 15px;
+    width: 0px;
+    background-color: #e0e0e0;     
 }
 
 @media only screen and (max-width: 767px) {        
