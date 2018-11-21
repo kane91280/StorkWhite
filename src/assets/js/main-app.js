@@ -7,10 +7,8 @@ $(document).ready(function() {
             r_val = ($(this).context.getAttribute("value")).trim();    
             r_id = ($(this).context.getAttribute("id")).trim();    
             var timeElapsed = 3000;            
-
-            //console.log($(this));
-            animateRatingProgresses(r_id, r_val);
             
+            animateRatingProgresses(r_id, r_val);            
         });
     }   
 
@@ -29,6 +27,5 @@ $(document).ready(function() {
                 $("#"+r_id).text(Math.round(this.counter) + "%");                    
             }
         });    
-    }
-    //$('.progress').animate({'width':'75%'}, 3000);
+    } 
   });
