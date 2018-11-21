@@ -22,8 +22,7 @@ export class SkillsService {
     let ratings : any[] = [
       { skill :"Angular", rate: 75},
       { skill :"Nodejs", rate: 80},
-      { skill :"Laravel", rate: 50}, 
-      { skill :"Cpp", rate: 80 },
+      { skill :"Laravel", rate: 50},       
       { skill :"Databases", rate: 70},
       { skill :"DevOps", rate: 60},  
     ]
