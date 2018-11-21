@@ -12,14 +12,14 @@
 }
 
 .progress-bar-container {
-    border: none !important;
+    border: none !important;    
 }
 
 .progress-title {
     color: #747474;
     font-size: 14px;
     letter-spacing: 2px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     top: 1px;
     margin-left: 45px;
 }

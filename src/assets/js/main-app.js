@@ -1,26 +1,34 @@
 $(document).ready(function() { 
     animateSkillRatings();
     function animateSkillRatings() {
+        var r_val;
         var rates = $('.progress');
         rates.each(function(){            
-            var r_val = ($(this).context.getAttribute("value")).trim();
-            var timeElapsed = 3000;
+            r_val = ($(this).context.getAttribute("value")).trim();    
+            r_id = ($(this).context.getAttribute("id")).trim();    
+            var timeElapsed = 3000;            
 
-            $(this).animate(
-                {
-                    'width': r_val + "%"
-                },    
-                timeElapsed
-            );            
-
-            /*$({ counter: 1 }).animate({ counter: 75 }, {
-                duration: 3000,
-                step: function() {
-                    $(this).text("fsdfsf");
-                }
-            });*/
-            //console.log();
+            //console.log($(this));
+            animateRatingProgresses(r_id, r_val);
+            
         });
     }   
+
+    function animateRatingProgresses(r_id, r_val) {
+        var timeElapsed = 3000;
+        $("#"+r_id).animate(
+            {
+                'width': r_val + "%"
+            },    
+            timeElapsed
+        );            
+
+        $({ counter: 1 }).animate({ counter: r_val }, {
+            duration: 3000,
+            step: function() {
+                $("#"+r_id).text(Math.round(this.counter) + "%");                    
+            }
+        });    
+    }
     //$('.progress').animate({'width':'75%'}, 3000);
   });
