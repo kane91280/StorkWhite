@@ -216,10 +216,10 @@ var AppModule = /** @class */ (function () {
             declarations: [
                 _app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"],
                 _about_about_component__WEBPACK_IMPORTED_MODULE_3__["AboutComponent"],
-                _skills_skills_component__WEBPACK_IMPORTED_MODULE_4__["SkillsComponent"]
+                _skills_skills_component__WEBPACK_IMPORTED_MODULE_4__["SkillsComponent"],
             ],
             imports: [
-                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"]
+                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
             ],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]]
@@ -350,7 +350,7 @@ module.exports = "#skills-rate {\r\n    margin-top: 18px;\r\n    margin-bottom: 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<script type=\"text/javascript\" src=\"https://code.jquery.com/jquery-2.1.1.min.js\"></script>\n<script type=\"text/javascript\" src=\"skills.js\">\n  $(document).ready(function() {\n    console.log(\"in skills\");\n  });\n  \n</script>\n<div class=\"row content-section\" id=\"skills-section\">\n  <div class=\"col s12 section-wrapper\">\n    <div class=\"row z-depth-1\" id=\"skills-wrapper\">\n\n      <div class=\"col m4 s12 section-left-col\" id=\"skills-list\">\n        <h3 class=\"section-title\">Skills</h3>\n        <div class=\"row\">\n          <ul class=\"collection col m11 s11\">\n            <li class=\"collection-item\" *ngFor=\"let skill of skills\">\n              {{skill}}\n            </li>            \n          </ul>\n        </div>\n      </div><!--end of skills-list-->\n\n      <div class=\"col m8 s12\" id=\"skills-rate\">     \n        <!--div class=\"test\">\n          <button class=\"btn blue\" style=\"width: 100px; height:70px;\" \n          (scroll)=\"test()\"\n          >\n            Test\n          </button>\n        </div-->\n        \n        <div class=\"row\">\n          <ul class=\"collection col m12 s12\">\n            <li class=\"collection-item progress-bar-container\" *ngFor=\"let rating of skillRatings\">                          \n              <div class=\"row\">\n                  <div class=\"col m2 s12\">\n                    <h3 class=\"progress-title\">{{rating.skill}}</h3>\n                  </div>\n                  <div class=\"col m9 s12 progress-bar-wrapper-layout\">\n                    <div class=\"progress-bar-wrapper\">              \n                      <div class=\"progress-bar\">\n                        <div class=\"progress\" [attr.value]=\"rating.rate\" [attr.id]=\"rating.skill\">\n                          \n                        </div>\n                      </div>\n                    </div>\n                  </div>\n              </div>            \n            </li><!--end of progress-bar-container-->\n          </ul>   \n        </div>\n      </div><!--end of skills-rate-->  \n    </div><!--end of skill-wrapper-->\n  </div><!--end of section wrapper-->\n</div><!--end of content-section-->\n"
+module.exports = "<script type=\"text/javascript\" src=\"https://code.jquery.com/jquery-2.1.1.min.js\"></script>\n<script type=\"text/javascript\" src=\"skills.js\">\n  $(document).ready(function() {\n    console.log(\"in skills\");\n  });\n  \n</script>\n<div class=\"row content-section\" id=\"skills-section\">\n  <div class=\"col s12 section-wrapper\">\n    <div class=\"row z-depth-1\" id=\"skills-wrapper\">\n      <div class=\"col m4 s12 section-left-col\" id=\"skills-list\">\n        <h3 class=\"section-title\">Skills</h3>\n        <div class=\"row\">\n          <ul class=\"collection col m11 s11\">\n            <li class=\"collection-item\" *ngFor=\"let skill of skills\">\n              {{skill}}\n            </li>            \n          </ul>\n        </div>\n      </div><!--end of skills-list-->\n\n      <div class=\"col m8 s12\" id=\"skills-rate\">                   \n        <div class=\"row\">\n          <ul class=\"collection col m12 s12\">\n            <li class=\"collection-item progress-bar-container\" *ngFor=\"let rating of skillRatings\">                          \n              <div class=\"row\">\n                  <div class=\"col m2 s12\">\n                    <h3 class=\"progress-title\">{{rating.skill}}</h3>\n                  </div>\n                  <div class=\"col m9 s12 progress-bar-wrapper-layout\">\n                    <div class=\"progress-bar-wrapper\">              \n                      <div class=\"progress-bar\">\n                        <div class=\"progress\" [attr.value]=\"rating.rate\" [attr.id]=\"rating.skill\">\n                          \n                        </div>\n                      </div>\n                    </div>\n                  </div>\n              </div>            \n            </li><!--end of progress-bar-container-->\n          </ul>   \n        </div>\n      </div><!--end of skills-rate-->  \n    </div><!--end of skill-wrapper-->\n  </div><!--end of section wrapper-->\n</div><!--end of content-section-->\n"
 
 /***/ }),
 
@@ -392,17 +392,12 @@ var SkillsComponent = /** @class */ (function () {
         enumerable: true,
         configurable: true
     });
-    SkillsComponent.prototype.test = function () {
-        //console.log('test');
-        this.isScrollIntoView();
-    };
-    SkillsComponent.prototype.isScrollIntoView = function () {
-        /*let docViewTop = $(window).scrollTop();
-        let docViewBottom = docViewTop + $(window).height();
-    
-        console.log("top " + docViewTop);
-        console.log("bottom " + docViewBottom);*/
-    };
+    /*@HostListener('mouseenter') doMouseEnter() {
+      console.log('mouse entered');
+    }
+    @HostListener('mouseleave') doMouseLeave() {
+      console.log('mouse left');
+    }*/
     SkillsComponent.prototype.ngOnInit = function () {
         /*$(document).ready(function(){
           console.log('in skills rating');

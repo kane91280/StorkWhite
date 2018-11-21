@@ -3,9 +3,10 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class SkillsService {
+export class SkillsService { 
 
-  constructor() { }
+  constructor() {     
+  } 
 
   getSkillList() : string[] {
     let skills : string[] = [

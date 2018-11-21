@@ -1,4 +1,4 @@
-import { Component, OnInit, Testability } from '@angular/core';
+import { Component, OnInit, Testability, HostListener } from '@angular/core';
 import { SkillsService } from '../skills.service';
 
 @Component({
@@ -18,19 +18,13 @@ export class SkillsComponent implements OnInit {
     this._skillRatings = skillsService.getSkillRatings();
   }
 
-  test() {
-    //console.log('test');
-    this.isScrollIntoView();
-  }
-
-  isScrollIntoView(){
-    /*let docViewTop = $(window).scrollTop();
-    let docViewBottom = docViewTop + $(window).height();
-
-    console.log("top " + docViewTop);
-    console.log("bottom " + docViewBottom);*/
-  }
-
+  /*@HostListener('mouseenter') doMouseEnter() {
+    console.log('mouse entered');
+  }  
+  @HostListener('mouseleave') doMouseLeave() {
+    console.log('mouse left');
+  }*/  
+  
   ngOnInit() {
     /*$(document).ready(function(){
       console.log('in skills rating');

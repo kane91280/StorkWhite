@@ -23,6 +23,7 @@
     "core-js": "^2.5.4",
     "jquery": "^2.2.4",
     "materialize-css": "^1.0.0-rc.2",
+    "ngx-scroll-event": "^1.0.8",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
   },

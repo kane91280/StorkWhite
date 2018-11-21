@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, NgZone } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
@@ -9,10 +9,10 @@ import { SkillsComponent } from './skills/skills.component';
   declarations: [
     AppComponent,
     AboutComponent,
-    SkillsComponent
+    SkillsComponent,    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,        
   ],
   providers: [],
   bootstrap: [AppComponent]
