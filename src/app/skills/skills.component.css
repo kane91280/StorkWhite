@@ -1,3 +1,8 @@
+#skills-rate {
+    margin-top: 18px;
+    margin-bottom: 13px;
+}
+
 .collection {
     float: right;
 }
@@ -5,15 +10,19 @@
 .collection .collection-item {
     background-color: #fff;
     line-height: 1.5rem;
-    padding: 10px 6px;
+    padding: 16px 6px;
     margin: 0;
     color: #bdbdbd;
     border-bottom: 1px solid #eeeeee;
 }
 
+.collection .collection-item:last-child {
+    border-bottom: none !important;
+}
+
 .progress-bar-container {
     border: none !important;    
-    margin-bottom: -25px !important;
+    margin-bottom: -35px !important;
 }
 
 .progress-title {
@@ -52,12 +61,17 @@
 }
 
 @media only screen and (max-width: 767px) {        
-    .collection .collection-item {        
-       /*background-color: #fff;
-        line-height: 1.5rem;*/
-        padding: 10px 0px;
-        /*margin: 0;
-        color: #bdbdbd;
-        border-bottom: 1px solid #eeeeee;*/
+    .progress-bar-container {        
+        margin-bottom: -25px !important;
+    }
+    .collection .collection-item {               
+        padding: 10px 0px;       
+    }
+    .progress-bar-wrapper-layout[_ngcontent-c2] {       
+        margin-top: -27px;
+    }
+    .section-left-col {  
+        border-right: none;      
+        margin-bottom: -64px;
     }
 }
