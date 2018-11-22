@@ -1,38 +1,25 @@
 $(document).ready(function() {
-
+    var scroll_cnt = 0;
     $(window).scroll(function(){
         controlScroll();
         //console.log("window's scrolling");
-    });
+    });    
 
-    
-
-    function controlScroll() {
-        //console.log("window's scrolling");
-        if(isScrolledOnDiv("skills-section")) {
-            animateSkillRatings();
-            //console.log('in view');
-        } else {
-            //console.log('out of view');
+    function controlScroll() {        
+        if(isScrolledOnDiv("skills-section") && scroll_cnt == 0) {
+            animateSkillRatings();          
+            scroll_cnt++;  
+        } else {            
         }
     }
 
-    function isScrolledOnDiv(param) {
-        //var elem = 
-        //console.log($(elem));
+    function isScrolledOnDiv(param) {        
         var topPivot = $(window).scrollTop();
         var bottomPivot = topPivot + $(window).height();
 
         var topElemOffset = $("#skills-section").offset().top;
         var bottomElemOffset = top + $("#skills-section").height();
-
-        console.log("top pivot " + topPivot);
-        //console.log("bottom pivot " + bottomPivot);
-        console.log("top elem offset " + topElemOffset);
-        //console.log("bottom elem offset " + bottomElemOffset);
-
-        //return ((topElemOffset >= topPivot) && (bottomElemOffset <= bottomPivot));
-        //return (topElemOffset >= topPivot);
+        
         return bottomPivot >= topElemOffset;
     }
     
@@ -59,7 +46,7 @@ $(document).ready(function() {
         );            
 
         $({ counter: 1 }).animate({ counter: r_val }, {
-            duration: timeElapsed,
+            duration: timeElapsed - 1000,
             step: function() {
                 $("#"+r_id).text(Math.round(this.counter) + "%");                    
             }
