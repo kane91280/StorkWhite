@@ -1,8 +1,10 @@
 $(document).ready(function() {
     var scroll_cnt = 0;
+
+    $('.parallax').parallax();    
+
     $(window).scroll(function(){
-        controlScroll();
-        //console.log("window's scrolling");
+        controlScroll();        
     });    
 
     function controlScroll() {        
